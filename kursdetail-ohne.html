@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-	<title>Kurskompass | vhs Leipzig</title>
+	<title>Kursdetail - ohne Merken | vhs Leipzig</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -211,37 +211,14 @@
 
 			<!-- SECTION Honig -->
 			<section class="honig">
-
-				<!-- SLider wrapper -->
-				<div class="honig-bg__slider swiper">
-					<!-- The moving part of the slider -->
-					<div class="honig-bg__wrapper swiper-wrapper">
-						<!-- Slide -->
-						<div class="honig-bg__slide swiper-slide">
-							<img src="img/honig.jpg" alt="honig">
-						</div>
-						<!-- Slide -->
-						<div class="honig-bg__slide swiper-slide">
-							<img src="img/honig.jpg" alt="honig">
-						</div>
-						<!-- Slide -->
-						<div class="honig-bg__slide swiper-slide">
-							<img src="img/honig.jpg" alt="honig">
-						</div>
-					</div>
-					<!-- If you need pagination -->
-					<!-- <div class="honig-bg__swiper-pagination"></div> -->
-					<!-- If you need buttons for navigation (left/right) -->
-					<button type="button" class="honig-bg__swiper-button-prev"></button>
-					<button type="button" class="honig-bg__swiper-button-next"></button>
+				<div class="honig__background-image">
+					<img src="img/bg-green.jpg" alt="background">
 				</div>
-
 
 				<div class='honig__container'>
 					<div class="honig__wrapper">
-						<div class="honig__title">Lust auf eigenen Honig?</div>
-						<div class="honig__subtitle">Grundkurs - Einstieg ins Imkern und die Bienenwelt praktisch meistern
-						</div>
+						<div class="honig__title">Header-Bereich</div>
+						<div class="honig__subtitle">Untertitel des Themas bzw. Teaser</div>
 					</div>
 					<div class="honig-bg__swiper-pagination"></div>
 				</div>
@@ -254,60 +231,180 @@
 
 
 
-			<!-- SECTION THEMES -->
-			<section class="themes">
-				<div class='themes__container'>
-					<h1 class="themes__title">Seitenüberschrift (h1)</h1>
-					<div class="themes__row">
+			<!-- SECTION BREADCRUMBS -->
+			<div class="breadcrumbs">
+				<div class='breadcrumbs__container'>
+					<a href="" class="breadcrumbs__item">
+						<div class="_icon-home"></div>
+					</a>
+					<a href="" class="breadcrumbs__item">
+						Gesundheit, Ernährung
+					</a>
+					<span class="breadcrumbs__item">
+						Gymnastik, Bewegung, Fitness
+					</span>
+				</div>
+			</div>
+			<!-- End of SECTION BREADCRUMBS -->
 
-						<div class="themes__cell">
-							<a href="" class="theme-card">
-								<div class="theme-card__image-wrapper">
-									<img src="img/themes/01.jpg" class="theme-card__image" alt="theme">
+
+
+
+
+			<!-- SECTION KURSDETAIL -->
+			<section class="kursdetail">
+				<div class='kursdetail__container'>
+					<div class="kursdetail__row">
+						<div class="kursdetail__col-left">
+							<div class="kursdetail__cell">
+								<h1 class="kursdetail__title">Gesund und Fit (online)</h1>
+								<div class="kursdetail__text">
+									Ganzkörperkräftigung in den eigenen vier Wänden
 								</div>
-								<div class="theme-card__body">
-									<div class="theme-card__title">Thema 1</div>
+								<div class="kursdetail__text-bottom">
+									<div class="kursdetail__item">Montag 21.10.22</div>
+									<div class="kursdetail__item">19:30 - 20:30 Uhr</div>
+									<div class="kursdetail__item">5 Termine</div>
+									<div class="kursdetail__item">Nr. 4711/2022</div>
 								</div>
-							</a>
+							</div>
+							<div class="kursdetail__cell">
+								<div class="kursdetail__text">
+									<p>Den Körper stark machen, in Balance bringen und mobilisieren. Sie erlernen gelenkschonende
+										sanfte Übungen, die den Körper stabilisieren, Verspannungen lösen helfen und für eine
+										bessere Haltung sorgen. Sie erhalten nützliche Hinweise für den Alltag. Die Kursstunde
+										wird mit einem gezielten Stretching abgerundet. Der Kurs ist für Geübte und Einsteigende
+										gleichermaßen geeignet.</p>
+									<p><span>Material:</span> bequeme Kleidung, dicke Socken, rutschfeste Turnschuhe, großes
+										Handtuch</p>
+									<p><span>Stadtteil:</span> Nord</p>
+								</div>
+							</div>
+
+							<div class="target-block"></div>
+
+							<div class="kursdetail__cell">
+								<div class="kursdetail__text">
+									<p>
+										Hinweise: Für die Anmeldung schreiben Sie bitte an vhs-deutsch@leipzig.de oder rufen an
+										unter 0341 123 6000.
+										<br>Alle Informationen werden angezeigt!
+									</p>
+								</div>
+
+								<!-- Registerkarten (Tabs) -->
+								<div data-tabs class="tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="button" class="tabs__title _tab-active">Vorteile</button>
+										<button type="button" class="tabs__title">5 Termine</button>
+										<button type="button" class="tabs__title">Kursleitende/-r</button>
+										<button type="button" class="tabs__title">Ort/Anfahrt</button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											<h2 class="tabs__title">Vorteile content</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia quam, optio
+												cupiditate, vero amet, vel quidem veritatis eveniet ab itaque consequatur in
+												doloribus deserunt repudiandae natus molestias? Quis, aspernatur.</p>
+										</div>
+										<div class="tabs__body">
+											<h2 class="tabs__title">5 Termine content</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia quam, optio
+												cupiditate, vero amet, vel quidem veritatis eveniet ab itaque consequatur in
+												doloribus deserunt repudiandae natus molestias? Quis, aspernatur.</p>
+										</div>
+										<div class="tabs__body">
+											<h2 class="tabs__title">Kursleitende/-r content</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia quam, optio
+												cupiditate, vero amet, vel quidem veritatis eveniet ab itaque consequatur in
+												doloribus deserunt repudiandae natus molestias? Quis, aspernatur.</p>
+										</div>
+										<div class="tabs__body">
+											<div class="tabs__row">
+												<div class="tabs__col">
+													<div class="tabs__image-wrapper">
+														<img src="img/image-empty.svg" alt="image">
+													</div>
+													<div class="tabs__body-text">
+														<h2 class="tabs__title">Kursort</h2>
+														<p>Treff: Südfriedhof, Prager Str. 212b</p>
+														<a href="" class="tabs__body-link">
+															<div class="_icon-details"></div>
+															<span>Details</span>
+														</a>
+													</div>
+												</div>
+												<div class="tabs__col">
+													<div class="_icon-geo-black"></div>
+													<div class="tabs__body-text">
+														<h2 class="tabs__title">Anfahrt</h2>
+														<p><a class="hover-underline" href="https://goo.gl/maps/GUCBTgdYQdWU8A7c6">https://goo.gl/maps/
+																<br>GUCBTgdYQdWU8A7c6</a></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Ende Registerkarten (Tabs) -->
+
+
+
+							</div>
 						</div>
 
-						<div class="themes__cell">
-							<a href="" class="theme-card">
-								<div class="theme-card__image-wrapper">
-									<img src="img/themes/02.jpg" class="theme-card__image" alt="theme">
+						<div data-da=".target-block, 993" class="kursdetail__col-right col-right">
+
+							<div class="col-right__content">
+								<div class="highlights-card__seats">
+									<div class="highlights-card__green-circle"></div>
+									<span>Kurs hat bereits begonnen, Anmeldung möglich!</span>
 								</div>
-								<div class="theme-card__body">
-									<div class="theme-card__title">Thema 2</div>
+
+								<div class="highlights-card__price">
+									<div class="highlights-card__price-cell">
+										<div class="highlights-card__full-price">
+											Preis
+										</div>
+										<div class="highlights-card__reduced-price">
+											(ermäßigt)
+										</div>
+									</div>
+									<div class="highlights-card__price-cell_2">
+										<div class="highlights-card__full-price">
+											77,00 €
+										</div>
+										<div class="highlights-card__reduced-price">
+											(65,50 €)
+											<img data-tippy-content="Jetzt sehen Sie weitere Informationen." class="image-tooltip" src="img/icons/info.svg" alt="info">
+										</div>
+									</div>
 								</div>
-							</a>
+							</div>
+
+							<div class="col-right__buttons">
+								<div class="yellow-button ohne-merken">
+									<span>Merken</span>
+									<img class="heart" src="img/icons/heart.svg" alt="buchen">
+									<img class="heart-black" src="img/icons/heart-black.svg" alt="buchen">
+								</div>
+
+								<div class="yellow-button">
+									<span>Buchen</span>
+									<div class="_icon-cart"></div>
+								</div>
+							</div>
+
 						</div>
 
-						<div class="themes__cell">
-							<a href="" class="theme-card">
-								<div class="theme-card__image-wrapper">
-									<img src="img/themes/01.jpg" class="theme-card__image" alt="theme">
-								</div>
-								<div class="theme-card__body">
-									<div class="theme-card__title">Thema 3</div>
-								</div>
-							</a>
-						</div>
-
-						<div class="themes__cell">
-							<a href="" class="theme-card">
-								<div class="theme-card__image-wrapper">
-									<img src="img/themes/02.jpg" class="theme-card__image" alt="theme">
-								</div>
-								<div class="theme-card__body">
-									<div class="theme-card__title">Thema 4</div>
-								</div>
-							</a>
-						</div>
-
+						<a href="" class="kursdetail__teilen">
+							<span>Mit Freunden teilen</span>
+							<div class="_icon-share"></div>
+						</a>
 					</div>
 				</div>
 			</section>
-			<!-- End of SECTION THEMES -->
+			<!-- End of SECTION KURSDETAIL -->
 
 
 
@@ -315,7 +412,7 @@
 			<!-- SECTION highlights -->
 			<section class="highlights">
 				<div class='highlights__container'>
-					<h2 class="highlights__title">Aktuelle Kurs-Highlights</h2>
+					<h2 class="highlights__title">Diese Kurse könnten Sie auch interessieren</h2>
 
 					<!-- Slider wrapper -->
 					<div class="highlights__slider swiper">
@@ -567,269 +664,6 @@
 
 
 
-			<!-- SECTION KURSKOMPASS -->
-			<section class="kurskompass kurskompass-2">
-				<div class='kurskompass__container'>
-					<div class="kurskompass__body">
-						<div class="kurskompass__header">
-							<div class="kurskompass__header-title">
-								<img src="img/icons/kurskompass.svg" alt="icon">
-								Kurskompass
-							</div>
-							<a href=""><img src="img/icons/close.svg" alt="close"></a>
-						</div>
-						<div class="kurskompass__row">
-							<div class="kurskompass__content">
-								<h2 class="kurskompass__title">Navigieren Sie zu dem für Sie passenden Kurs</h2>
-								<div class="kurskompass__tabs">
-									<div class="tabs-wrapper">
-										<div class="kurskompass__tab tab-active">Interessen</div>
-										<img src="img/icons/arrow.svg" alt="arrow">
-									</div>
-									<div class="tabs-wrapper">
-										<div class="kurskompass__tab"><a href="">Kurstyp</a></div>
-										<img src="img/icons/arrow.svg" alt="arrow">
-									</div>
-									<div class="tabs-wrapper">
-										<div class="kurskompass__tab"><a href="">Zeiten/Tage</a></div>
-										<img src="img/icons/arrow.svg" alt="arrow">
-									</div>
-									<div class="tabs-wrapper">
-										<div class="kurskompass__tab"><a href="">Taktung</a></div>
-									</div>
-								</div>
-
-								<div class="kurskompass__description">
-									<div class="kurskompass__big-text">Wählen Sie aus Ihren Interessensgebieten:</div>
-									<div class="kurskompass__small-text">(Mehrfachauswahl möglich)</div>
-								</div>
-
-								<form name="kurskompass-form" class="kurskompass-form" action="#" method="post">
-									<div class="kurskompass-form__row">
-										<div class="kurskompass-form__cell">
-											<div class="checkbox">
-												<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="checkbox-01">
-												<label for="c_1" class="checkbox__label"><span class="checkbox__text">Kultur &
-														Kreativität
-													</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="checkbox-02">
-												<label for="c_2" class="checkbox__label"><span class="checkbox__text">Entspannung &
-														Bewegung</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_3" class="checkbox__input" type="checkbox" value="1" name="checkbox-03">
-												<label for="c_3" class="checkbox__label"><span class="checkbox__text">Ernährung &
-														Kochen</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_4" class="checkbox__input" type="checkbox" value="1" name="checkbox-04">
-												<label for="c_4" class="checkbox__label"><span class="checkbox__text">Psychologie &
-														Pädagogik</span></label>
-											</div>
-										</div>
-										<div class="kurskompass-form__cell">
-											<div class="checkbox">
-												<input id="c_5" class="checkbox__input" type="checkbox" value="1" name="checkbox-05">
-												<label for="c_5" class="checkbox__label"><span class="checkbox__text">Medien &
-														Digitales</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_6" class="checkbox__input" type="checkbox" value="1" name="checkbox-06">
-												<label for="c_6" class="checkbox__label"><span class="checkbox__text">Berufliche
-														Weiterentwicklung</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_7" class="checkbox__input" type="checkbox" value="1" name="checkbox-07">
-												<label for="c_7" class="checkbox__label"><span class="checkbox__text">Sprachen</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_8" class="checkbox__input" type="checkbox" value="1" name="checkbox-08">
-												<label for="c_8" class="checkbox__label"><span class="checkbox__text">Deutsch &
-														Integration</span></label>
-											</div>
-										</div>
-										<div class="kurskompass-form__cell">
-											<div class="checkbox">
-												<input id="c_9" class="checkbox__input" type="checkbox" value="1" name="checkbox-09">
-												<label for="c_9" class="checkbox__label"><span class="checkbox__text">Geschichte &
-														Politik
-													</span></label>
-											</div>
-											<div class="checkbox">
-												<input id="c_10" class="checkbox__input" type="checkbox" value="1" name="checkbox-10">
-												<label for="c_10" class="checkbox__label"><span class="checkbox__text">Leipzig,
-														meine Stadt</span></label>
-											</div>
-										</div>
-									</div>
-								</form>
-
-
-								<div class="kurskompass__buttons">
-									<a href="" class="kurskompass__prev"><img src="img/icons/arrows.svg" alt="prev"></a>
-									<a href="" class="kurskompass__button">1.872 Kurse anzeigen</a>
-									<a href="" class="kurskompass__next button-active"><img src="img/icons/arrows.svg" alt="next"></a>
-								</div>
-
-							</div>
-							<div class="kurskompass__image-wrapper">
-								<img src="img/kurskompass/kurskompass-bild.jpg" class="kurskompass__image" alt="image">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End of SECTION KURSKOMPASS -->
-
-
-
-
-			<!-- SECTION PODCASTS -->
-			<section class="podcasts">
-				<div class='podcasts__container'>
-					<h2 class="podcasts__title">Podcasts</h2>
-
-					<!-- SLider wrapper -->
-					<div class="podcasts__slider swiper">
-						<!-- The moving part of the slider -->
-						<div class="podcasts__wrapper swiper-wrapper">
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach so!? Podcast zur Grundbildung</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach was!? Podcast zu sozialkritischen Themen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach wie!? Podcast zu Gesundheitsthemen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach so!? Podcast zur Grundbildung</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach was!? Podcast zu sozialkritischen Themen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach wie!? Podcast zu Gesundheitsthemen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach so!? Podcast zur Grundbildung</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach was!? Podcast zu sozialkritischen Themen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-							<!-- Slide -->
-							<div class="podcasts__slide swiper-slide">
-								<div class="podcasts-card">
-									<h3 class="podcasts-card__title">Ach wie!? Podcast zu Gesundheitsthemen</h3>
-									<div class="podcasts-card__text">Hören Sie Geschichten aus dem Alltag. Sie finden sich in
-										Situationen
-										wieder, die alle schon …</div>
-									<a href="" class="podcasts-card__button">
-										<div class="_icon-radio"></div><span>hören</span>
-									</a>
-								</div>
-							</div>
-
-						</div>
-						<!-- If you need pagination -->
-						<div class="podcasts-pagination"></div>
-					</div>
-
-				</div>
-			</section>
-			<!-- End of SECTION PODKASTS -->
-
-
-
-
-
-
-
-
-
 
 			<!-- SECTION Newsletter -->
 			<section class="newsletter">
@@ -866,7 +700,10 @@
 			<!-- End of SECTION Newsletter -->
 
 
+
+
 			<div class="bottom-sticky-block"></div>
+
 
 
 		</main>
