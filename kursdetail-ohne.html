@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css?_v=20230124183350">
+	<link rel="stylesheet" href="css/style.css?_v=20230124185354">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +28,13 @@
 						<form name="filter-form" class="filter__form" action="#" method="post">
 							<input autocomplete="off" type="text" name="filter-input" data-error="Fehler" placeholder="Suchbegriff oder Kurs …" class="input">
 							<button type="submit" class="filter__button-submit">
-								<div class="_icon-search"></div>
+								<a href="#" data-popup="#search" class="_icon-search"></a>
 							</button>
 						</form>
-						<a href="" class="menu__icon">
-							<div class="_icon-filter"></div>
+						<a href="#" data-popup="#filter" class="menu__icon">
+							<div class="_icon-filter">
+								<div class="close-button"></div>
+							</div>
 							<span>Filter</span>
 						</a>
 					</div>
@@ -898,7 +900,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230124183350"></script>
+	<script src="js/app.min.js?_v=20230124185354"></script>
 </body>
 
 </html>

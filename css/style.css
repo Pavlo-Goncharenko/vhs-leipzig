@@ -936,8 +936,9 @@ body::after {
   position: absolute;
   top: 0;
   right: 10px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
 }
 
 .popup_show {
@@ -988,13 +989,18 @@ body::after {
   transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   background-color: rgb(255, 255, 255);
-  padding: 20px 15px 20px 15px;
+  padding: 26px 15px 20px 15px;
   width: 100%;
   max-width: 900px;
 }
 
 .lock .popup__content {
   visibility: visible;
+}
+
+.popup .filters__selects {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .spollers {
@@ -3891,7 +3897,7 @@ h2 {
   }
 
   .popup__content {
-    padding: 20px 15px 80px 15px;
+    padding: 26px 15px 80px 15px;
   }
 
   main .bottom-sticky-block {
@@ -4020,7 +4026,7 @@ h2 {
 
 @media (max-width: 48.06125em) {
   .popup__content {
-    padding: 20px 15px 120px 15px;
+    padding: 26px 15px 120px 15px;
   }
 
   .popup .filters .active-filter,
@@ -4295,6 +4301,10 @@ h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+
+  .popup .filters__selects {
+    gap: 0;
   }
 
   .popup .filters__selects .spollers,
