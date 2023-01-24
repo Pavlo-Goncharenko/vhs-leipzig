@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230122213007">
+	<link rel="stylesheet" href="css/style.css?_v=20230124183350">
 	<link rel="shortcut icon" href="img/favicon.png">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -28,11 +28,13 @@
 						<form name="filter-form" class="filter__form" action="#" method="post">
 							<input autocomplete="off" type="text" name="filter-input" data-error="Fehler" placeholder="Suchbegriff oder Kurs …" class="input">
 							<button type="submit" class="filter__button-submit">
-								<div class="_icon-search"></div>
+								<a href="#" data-popup="#search" class="_icon-search"></a>
 							</button>
 						</form>
-						<a href="" class="menu__icon">
-							<div class="_icon-filter"></div>
+						<a href="#" data-popup="#filter" class="menu__icon">
+							<div class="_icon-filter">
+								<div class="close-button"></div>
+							</div>
 							<span>Filter</span>
 						</a>
 					</div>
@@ -341,9 +343,9 @@
 
 					<!-- SECTION Suchergebnisse -->
 					<div class="suchergebnisse">
-						<div class="suchergebnisse__info">
+						<a href="" class="suchergebnisse__info">
 							234 Kurse anzeigen
-						</div>
+						</a>
 
 						<div class="cards-wrapper">
 
@@ -1162,7 +1164,7 @@
 							<li><a href="">Service & Kontakt</a></li>
 							<li><a href="">Infos für Teilnehmer/-innen</a></li>
 							<li><a href="">Infos für Kursleiter/-innen</a></li>
-							<li><a href="">Leichte Sprache | Kursgutscheine</a></li>
+							<li><a href="">Leichte Sprache</a> | <a href="">Kursgutscheine</a></li>
 						</ul>
 					</div>
 
@@ -1171,8 +1173,8 @@
 							vhs Social
 						</h3>
 						<ul>
-							<li><a href="">Instagram | Facebook </a></li>
-							<li><a href="">Twitter | YouTube | Podcast</a></li>
+							<li><a href="">Instagram</a> | <a href="">Facebook</a></li>
+							<li><a href="">Twitter</a> | <a href="">YouTube</a> | <a href="">Podcast</a></li>
 						</ul>
 					</div>
 
@@ -1181,7 +1183,7 @@
 							Rechtliches
 						</h3>
 						<ul>
-							<li><a href="">Impressum | AGB</a></li>
+							<li><a href="">Impressum</a> | <a href="AGB"></a></li>
 							<li><a href="">Datenschutzerklärung </a></li>
 							<li><a href="">Widerrufsbelehrung</a></li>
 						</ul>
@@ -1196,7 +1198,139 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230122213007"></script>
+	<div id="search" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">&#215;</button>
+				<div class="popup__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis fugit voluptatibus voluptatum
+					minima sapiente molestiae natus illum, et magni. Dolorum debitis dignissimos deleniti quisquam, laudantium
+					tempore fuga unde reprehenderit.
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="filter" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">&#215;</button>
+				<div class="popup__text">
+					<!-- FILTERS -->
+					<div class="kursubersicht__filters filters">
+						<div class="filters__row-top">
+							<div class="filters__active-filter active-filter">
+								<div class="active-filter__text">Aktive Filter:</div>
+								<div class="active-filter__item">
+									buchbar
+									<div class="active-filter__button-hide">x</div>
+								</div>
+								<div class="active-filter__item">
+									Filter löschen
+									<div class="active-filter__button-hide">x</div>
+								</div>
+							</div>
+
+							<div class="filters__order">
+								<select name="Sortierung" data-class-modif="form">
+									<option value="1" selected>Beginn
+										aufsteigend</option>
+									<option value="2"><img src="img/icons/to-up.svg" alt="Sortierung">Option 2</option>
+									<option value="3"><img src="img/icons/to-up.svg" alt="Sortierung">Option 3</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="filters__row-bottom">
+							<div class="filters__checkboxes">
+								<div class="checkbox filters__checkbox">
+									<input id="cf_1" class="checkbox__input" type="checkbox" value="1" name="buchbar">
+									<label for="cf_1" class="checkbox__label"><span class="checkbox__text">buchbar</span></label>
+								</div>
+								<div class="checkbox filters__checkbox">
+									<input id="cf_2" class="checkbox__input" type="checkbox" value="1" name="begonnener-Kurse">
+									<label for="cf_2" class="checkbox__label"><span class="checkbox__text">inkl. begonnener
+											Kurse</span></label>
+								</div>
+								<div class="checkbox filters__checkbox">
+									<input id="cf_3" class="checkbox__input" type="checkbox" value="1" name="barrierefrei">
+									<label for="cf_3" class="checkbox__label"><span class="checkbox__text">barrierefrei</span></label>
+								</div>
+							</div>
+
+							<div class="filters__selects">
+								<select name="Stadtgebiet" data-class-modif="form">
+									<option value="1" selected>Stadtgebiet</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+
+								<select name="Kurstyp" data-class-modif="form">
+									<option value="1" selected>Kurstyp</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+
+								<select name="Zeiten-und-Tage" data-class-modif="form">
+									<option value="1" selected>Zeiten und Tage</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+
+								<select name="Taktung" data-class-modif="form">
+									<option value="1" selected>Taktung</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+
+								<div data-spollers class="spollers">
+									<!-- PRICE -->
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Preis €</button>
+										<div class="spollers__body">
+											<!-- <div id="price-range"></div> -->
+											<div class="price__wrapper">
+
+												<!-- value="0" set Start value for the unput, you can change this -->
+												<input id="price-start" autocomplete="off" type="number" name="price-from" value="0" class="price__input" />
+
+												<!-- value="1000" set Start value for the unput, you can change this -->
+												<!-- set the aria-valuemax for other biggest price: -->
+												<input id="price-end" autocomplete="off" type="number" name="price-to" class="price__input" value="1000" aria-valuemax="1000" />
+
+											</div>
+											<div class="range-body">
+												<div id="range"></div>
+											</div>
+
+										</div>
+									</div>
+									<!-- End of PRICE -->
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<!-- FILTERS Ende -->
+
+
+					<!-- SECTION Suchergebnisse -->
+					<div class="suchergebnisse">
+						<a href="" class="suchergebnisse__info">
+							234 Kurse anzeigen
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230124183350"></script>
 </body>
 
 </html>
